@@ -30,5 +30,18 @@
     <br />
     <br />
     <button class="btn">See More Pics of Otto</button>
+    <script>
+      function address() {
+        let name = prompt("what is your name ?");
+        let address = prompt(" what is your email address ?");
+        if (address > 2) {
+          alert("Thank you " + name + " we will be in contact");
+        } else {
+          alert("We can not find address");
+        }
+      }
+      let readButton = document.querySelector("button");
+      readButton.addEventListener("click", address);
+    </script>
   </body>
 </html>
